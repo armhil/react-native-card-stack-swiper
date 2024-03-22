@@ -9,8 +9,15 @@ import {
   Text,
   Platform
 } from 'react-native';
+import { CardStackProps } from './types';
+import { createPanResponder } from './pan-responder-factory';
 
 const { height, width } = Dimensions.get('window');
+
+export function CardStack(props: CardStackProps) {
+    const panResponder = createPanResponder();
+    return <></>
+}
 
 class CardStack extends Component {
   
@@ -30,26 +37,7 @@ class CardStack extends Component {
     };
     this.distance = this.constructor.distance;
     this._panResponder = PanResponder.create({
-      onStartShouldSetPanResponder: (evt, gestureState) => false,
-      onStartShouldSetPanResponderCapture: (evt, gestureState) => false,
-      onMoveShouldSetPanResponder: (evt, gestureState) => {
-        const isVerticalSwipe = Math.sqrt(
-          Math.pow(gestureState.dx, 2) < Math.pow(gestureState.dy, 2)
-        )
-        if (!this.props.verticalSwipe && isVerticalSwipe) {
-          return false
-        }
-        return Math.sqrt(Math.pow(gestureState.dx, 2) + Math.pow(gestureState.dy, 2)) > 10
-      },
-      onMoveShouldSetPanResponderCapture: (evt, gestureState) => {
-        const isVerticalSwipe = Math.sqrt(
-          Math.pow(gestureState.dx, 2) < Math.pow(gestureState.dy, 2)
-        )
-        if (!this.props.verticalSwipe && isVerticalSwipe) {
-          return false
-        }
-        return Math.sqrt(Math.pow(gestureState.dx, 2) + Math.pow(gestureState.dy, 2)) > 10
-      },
+      
       onPanResponderGrant: (evt, gestureState) => {
         this.props.onSwipeStart();
         this.setState({ touchStart: new Date().getTime() });
