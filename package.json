@@ -1,10 +1,12 @@
 {
-  "name": "react-native-card-stack-swiper",
-  "version": "1.2.5",
+  "name": "@armhil/react-native-card-stack-swiper",
+  "version": "1.0.0",
   "description": "Tinder like react-native card stack swiper",
   "main": "index.js",
+  "types": "@types",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": ""
   },
   "repository": {
     "type": "git",
@@ -24,17 +26,20 @@
   ],
   "author": "Ludwig Handel",
   "license": "MIT",
-  "peerDependencies": {
-    "react": "^16.0.0-beta.5",
-    "react-native": "^0.49.1"
-  },
   "bugs": {
     "url": "https://github.com/lhandel/react-native-card-stack-swiper/issues"
   },
-  "bundleDependencies": false,
+  "bundleDependencies": [],
   "dependencies": {
     "prop-types": "15.5.10",
-    "react-lifecycles-compat": "^3.0.4"
+    "react": "^18.2.0",
+    "react-lifecycles-compat": "^3.0.4",
+    "react-native": "^0.73.6"
   },
-  "homepage": "https://github.com/lhandel/react-native-card-stack-swiper#readme"
+  "homepage": "https://github.com/lhandel/react-native-card-stack-swiper#readme",
+  "devDependencies": {
+    "@types/react": "^18.2.67",
+    "@types/react-native": "^0.73.0",
+    "typescript": "^5.4.3"
+  }
 }

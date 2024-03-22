@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "allowJs": true,
+        "outDir": "./dist",
+        "target": "ESNext",
+        "moduleResolution": "Node"
+    },
+}
