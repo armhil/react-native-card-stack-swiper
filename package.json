@@ -2,8 +2,8 @@
   "name": "@armhil/react-native-card-stack-swiper",
   "version": "1.0.0",
   "description": "Tinder like react-native card stack swiper",
-  "main": "index.js",
-  "types": "@types",
+  "main": "./dist/index.js",
+  "types": "@types/main.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": ""
@@ -25,6 +25,7 @@
     "react-native-component"
   ],
   "author": "Ludwig Handel",
+  "maintainers": ["armhil", "lhandel"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lhandel/react-native-card-stack-swiper/issues"

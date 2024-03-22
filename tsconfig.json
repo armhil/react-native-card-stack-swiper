@@ -4,6 +4,7 @@
         "allowJs": true,
         "outDir": "./dist",
         "target": "ESNext",
-        "moduleResolution": "Node"
+        "moduleResolution": "Node",
+        "jsx": "react"
     },
 }

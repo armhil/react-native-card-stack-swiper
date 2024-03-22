@@ -13,7 +13,6 @@ import {
 const { height, width } = Dimensions.get('window');
 
 class CardStack extends Component {
-
   
   static distance = (x, y) => Math.hypot(x, y);
 
